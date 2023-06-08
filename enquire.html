@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="public/enquire.css">
+</head>
+<body>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="img/gtsmalllogo.png" alt="logo">
+ <br><br>
+  <form  method="post">
+  <div class="elem-group">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="visitor_name" placeholder="Your name" value="" required/>
+  </div>
+  <div class="elem-group">
+    <label for="email">Your E-mail</label>
+    <input type="email" id="email" name="visitor_email" placeholder="name@email.com" value="" required>
+  </div>
+  <div class="elem-group">
+    <label for="phone">Your Phone</label>
+    <input type="tel" id="phone" name="visitor_phone" placeholder="9789438724" value="" required>
+  </div>
+  <hr>
+  <div class="elem-group inlined">
+    <label for="adult">Adults</label>
+    <input type="number" id="adult" name="total_adults" placeholder="0" min="1" value="" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="child">Children</label>
+    <input type="number" id="child" name="total_children" placeholder="0" min="0"value="" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="checkin-date">Check-in Date</label>
+    <input type="date" id="checkin-date" name="checkin" value=""required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="checkout-date">Check-out Date</label>
+    <input type="date" id="checkout-date" name="checkout" value=""required>
+  </div>
+  <div class="elem-group">
+    
+    <label for="room-selection">Select Travel Place</label>
+
+    <select id="place" type="text"name="place" required>
+        <option value="">Choose a Destination from the List</option>
+        <option value="Within India">Within India</option>
+        <option value="Paris">Paris</option>
+        <option value="Australia">Australia</option>
+        <option value="Maldives">Maldives</option>
+        <option value="Bali">Bali</option>
+        <option value="Japan">Japan</option>
+        <option value="Malaysia">Malaysia</option>
+        <option value="Singapore">Singapore</option>
+        <option value="Dubai">Dubai</option>
+        <option value="Switzerland">Switzerland</option>
+        <option value="SriLanka">SriLanka</option>
+        <option value="Canada">Canada</option>
+        <option value="Europe">Europe<option>
+    </select>
+  </div>
+  <hr>
+  <div class="elem-group">
+    <label for="message">Anything Else?</label>
+    <textarea id="message" type="text" name="visitor_message" placeholder="Tell us about your expectations in 10-12 words shortly." value=""required></textarea>
+  </div>
+  
+  <input type="submit" name="Enquire Now" value="Send Enquiry" formaction="http://localhost:3000/enquire"/>
+</form>
+</body>
+</html>
+
+  
